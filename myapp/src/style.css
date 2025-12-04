@@ -1,0 +1,238 @@
+body {
+  background-color: #f2f4ff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 40px;
+}
+
+h1 {
+  font-family: 'Trebuchet MS', sans-serif;
+  color: #333;
+}
+
+img {
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover { background-color: #0056b3; }
+
+.back-link {
+  display: block;
+  margin-top: 30px;
+  color: #007bff;
+  text-decoration: none;
+}
+.back-link:hover { text-decoration: underline; }
+
+/* Business Card */
+.business-card {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.business-card img { width: 160px; height: 160px; }
+.business-card .btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.business-card .btn:hover { background: #0056b3; }
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+@media (max-width: 900px) {
+  .gallery { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* To-Do */
+.todo-container { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+#todo-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+}
+#todo-list {
+  list-style: none;
+  padding: 0;
+}
+#todo-list li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #f1f1f1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  gap: 8px;
+}
+#todo-list li input[type="checkbox"] {
+  flex-shrink: 0;
+}
+#todo-list li span {
+  flex-grow: 1;
+  text-align: left;
+}
+#todo-list li button {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 4px 8px;
+}
+.todo-item {
+  background: #f1f1f1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+}
+.todo-item.done span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Hobbies List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul li {
+  list-style: none;
+  padding: 10px 15px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f1f1f1;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+ul li input[type="checkbox"] {
+  flex-shrink: 0;
+}
+ul li span {
+  flex-grow: 1;
+  text-align: left;
+}
+ul li button {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 4px 8px;
+}
+ul li.done span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Navigation */
+.nav {
+  list-style: none;
+  padding: 0;
+}
+.nav li { margin: 10px 0; }
+.nav a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 18px;
+}
+.nav a:hover { text-decoration: underline; }
+
+/* Theme styles */
+.light {
+  background-color: #f4f7fa;
+  color: #222;
+}
+
+.dark {
+  background-color: #1b1b1b;
+  color: #f2f2f2;
+}
+
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #E07A5F;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.theme-toggle:hover {
+  opacity: 0.8;
+}
+
+/* Improve global UI */
+button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #E07A5F;
+  color: white;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
