@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-function Uzd3() {    
+function Task3() {    
     const [task, setTask] = useState('');
     const [tasks, setTasks] = useState([]);
 
@@ -25,4 +25,4 @@ function Uzd3() {
 
 }
 
-export default Uzd3;
+export default Task3;

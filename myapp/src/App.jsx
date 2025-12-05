@@ -8,7 +8,7 @@ import Hobbies from "./components/hobbies";
 import Todo from "./components/todo";
 import Counter from "./components/counter";
 import OnChange from "./components/on-change";
-import Uzd3 from "./components/uzd3";
+import Task3 from "./components/task3";
 import PostsList from "./components/posts-list";
 import Dog from "./components/dog-image";
 
@@ -31,8 +31,8 @@ function App() {
         return <Counter />;
       case "OnChange":
         return <OnChange />;
-      case "Uzd3":
-        return <Uzd3 />;
+      case "Task3":
+        return <Task3 />;
       case "PostsList":
         return <PostsList />;
       case "Dog":
@@ -52,7 +52,7 @@ function App() {
         <button onClick={() => setActiveComponent("Todo")}>Todo</button>
         <button onClick={() => setActiveComponent("Counter")}>Counter</button>
         <button onClick={() => setActiveComponent("OnChange")}>OnChange</button>
-        <button onClick={() => setActiveComponent("Uzd3")}>Task List</button>
+        <button onClick={() => setActiveComponent("Task3")}>Task List</button>
         <button onClick={() => setActiveComponent("PostsList")}>Posts</button>
         <button onClick={() => setActiveComponent("Dog")}>Dog</button>
       </div>
