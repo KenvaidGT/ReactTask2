@@ -3,7 +3,7 @@ import React from "react";
 function Gallery() {
   return (
     <div className="gallery-section">
-      <h1>Responsive Image Gallery (Grid)</h1>
+      <h1>Image Gallery</h1>
 
       <div className="gallery">
         <img src="https://picsum.photos/300?1" alt="gallery item 1" />
