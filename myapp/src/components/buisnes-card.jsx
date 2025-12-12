@@ -2,7 +2,6 @@
 
 import React from 'react';
 
-// Создаем "страничку" - это функция, которая возвращает то, что мы увидим
 function BuisnesCard() {
     return (
     <>
@@ -10,7 +9,7 @@ function BuisnesCard() {
 
       <div className="business-card">
         <img 
-          src="https://media.discordapp.net/attachments/1165574011535757322/1446117133053333616/20251119_145700.jpg?ex=6932d108&is=69317f88&hm=1c283a650c20a19c941868fc98147143ff7c721779774c9cea755592b00d3b13&=&format=png&width=446&height=956" 
+          src="https://thumbs.dreamstime.com/b/minecraft-186775550.jpg" 
           alt="Profile" 
         />
         <div className="info">
@@ -25,5 +24,4 @@ function BuisnesCard() {
   );
 }
 
-// Делаем нашу "страничку" доступной для использования в других файлах
 export default BuisnesCard;

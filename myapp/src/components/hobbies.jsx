@@ -26,7 +26,7 @@ function Hobbies() {
 function AboutPage() {
   return (
     <>
-    <h1>Dynamic Hobbies (JS Arrays)</h1>
+    <h1>Dynamic Hobbis</h1>
 
     <Hobbies />
     </>
