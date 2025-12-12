@@ -19,7 +19,7 @@ const getWebsiteDomain = () => {
 
 SuperTokens.init({
   appInfo: {
-    appName: "Zencovs Lessons",
+    appName: "TokenName",
     apiDomain,
     websiteDomain: getWebsiteDomain(),
     apiBasePath: "/auth",

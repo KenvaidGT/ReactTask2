@@ -14,7 +14,7 @@ SuperTokens.init({
     connectionURI,
   },
   appInfo: {
-    appName: "Zencovs Lessons",
+    appName: "TokenName",
     apiDomain,
     websiteDomain,
     apiBasePath: "/auth",
